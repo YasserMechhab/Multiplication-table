@@ -7,11 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button quitter_btn,reinitialiser_btn;
+    Button quitter_btn,reinitialiser_btn,afficher_btn;
     EditText nbr_field;
     TextView multiplication_table;
+    String result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,5 +41,36 @@ public class MainActivity extends AppCompatActivity {
                 multiplication_table.setText(etat0);
             }
         });
+
+
+
+        afficher_btn=findViewById(R.id.afficher_btn);
+
+        afficher_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                    String nbr = nbr_field.getText().toString();
+                    int n =Integer.parseInt(nbr);
+
+                    result="";
+                    for (int i=0;i<=10;i++){
+
+                        result+= n +" * "+i+" = "+n*i+"\n";
+
+                        multiplication_table.setText(result);
+
+
+                    }
+
+
+
+            }
+        });
+
+
+
+
     }
 }
