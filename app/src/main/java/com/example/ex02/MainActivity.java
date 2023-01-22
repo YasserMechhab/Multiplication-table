@@ -50,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                String numbre = nbr_field.getText().toString();
+                if (numbre.trim().equals("")) {
+                    Toast.makeText(MainActivity.this, "Veuillez saisir un entier !!!", Toast.LENGTH_SHORT).show();
+
+                    String etat0="? * 0 = ?\n? * 1 = ?\n? * 2 = ?\n? * 3 = ?\n? * 4 = ?\n? * 4 = ?\n? * 5 = ?\n? * 6 = ?\n? * 7 = ?\n? * 8 = ?\n? * 9 = ?\n? * 10 = ?";
+                    multiplication_table.setText(etat0);
+
+                }else {
 
                     String nbr = nbr_field.getText().toString();
                     int n =Integer.parseInt(nbr);
@@ -61,8 +69,9 @@ public class MainActivity extends AppCompatActivity {
 
                         multiplication_table.setText(result);
 
-
                     }
+
+                }
 
 
 
