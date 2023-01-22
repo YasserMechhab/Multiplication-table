@@ -4,4 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nbr_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reinitialiser_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/reinitialiser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbr_field" />
+
+    <Button
+        android:id="@+id/afficher_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/afficher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reinitialiser_btn" />
+
+    <TextView
+        android:layout_width="144dp"
+        android:layout_height="289dp"
+        android:layout_marginTop="64dp"
+        android:lines="12"
+        android:text="\? * 0 = ?\n? * 1 = ?\n? * 2 = ?\n? * 3 = ?\n? * 4 = ?\n? * 4 = ?\n? * 5 = ?\n? * 6 = ?\n? * 7 = ?\n? * 8 = ?\n? * 9 = ?\n? * 10 = ?"
+        android:textSize="19dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/afficher_btn" />
+
+    <Button
+        android:id="@+id/quitter_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/quitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbr_field"
+        app:layout_constraintVertical_bias="0.947" />
+</androidx.constraintlayout.widget.ConstraintLayout>
