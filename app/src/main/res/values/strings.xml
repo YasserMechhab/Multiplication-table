@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ex02\'</string>
+    <string name="app_name">Mulitplication Table</string>
     <string name="afficher">Afficher</string>
     <string name="reinitialiser">Réinitialiser</string>
     <string name="quitter">Quitter</string>

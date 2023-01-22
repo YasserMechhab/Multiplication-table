@@ -39,13 +39,16 @@
         app:layout_constraintTop_toBottomOf="@+id/reinitialiser_btn" />
 
     <TextView
+        android:id="@+id/multiplication_table"
         android:layout_width="144dp"
         android:layout_height="289dp"
         android:layout_marginTop="40dp"
+        android:layout_marginBottom="99dp"
         android:gravity="center"
         android:lines="12"
         android:text="\? * 0 = ?\n? * 1 = ?\n? * 2 = ?\n? * 3 = ?\n? * 4 = ?\n? * 4 = ?\n? * 5 = ?\n? * 6 = ?\n? * 7 = ?\n? * 8 = ?\n? * 9 = ?\n? * 10 = ?"
         android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/quitter_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
